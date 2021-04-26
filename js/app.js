@@ -38,7 +38,7 @@ while (karshat !== 'yes' && karshat !== 'y' && karshat !== 'no' && karshat !== '
 }
 if (karshat === 'yes' || karshat === 'y') {
   console.log('I hate Karshat food ?  \'yes\' is a wrong answer ');
-  document.write('<p id="answers">3. I hate Karshat food ?  \'yes\' is a wrong answer</p>'),
+  document.write('<p>3. I hate Karshat food ?  \'yes\' is a wrong answer</p>'),
   alert ('I hate Karshat food ?  \'yes\' is a wrong answer');
 } else if (karshat === 'no' || karshat === 'n') {
   document.write('<p>3. I hate Karshat food ?  \'No\' is a correct answer</p>'),

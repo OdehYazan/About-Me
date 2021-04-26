@@ -33,10 +33,10 @@ if (karshat === 'yes' || karshat === 'y') {
   console.log('I hate Karshat food \'No\' is  wrong answer');
 }
 
-let drivelicence = prompt ('Whta do think I have driving licence  ? Y/N or Yes/No');
+let drivelicence = prompt ('Whta do think I have driving licence  ? Y/N or Yes/No').toLowerCase();
 
 while (drivelicence !== 'yes' && drivelicence !== 'y' && drivelicence !== 'no' && drivelicence !== 'n') {
-  karshat = prompt('Whta do think I have driving licence or not  ? Y/N or Yes/No').toLowerCase();
+  drivelicence = prompt('Whta do think I have driving licence or not  ? Y/N or Yes/No').toLowerCase();
 }
 if (drivelicence === 'yes' || drivelicence === 'y') {
   console.log('Correct I have driving licence ');
@@ -44,4 +44,13 @@ if (drivelicence === 'yes' || drivelicence === 'y') {
   console.log( 'Wrong  I have driving licence since 2010');
 }
 
-let favColor = prompt ()
+let favColor = prompt ('My favorite color is Green ? Y(yes)/N(no) ');
+
+while (favColor !== 'yes' && favColor !== 'y' && favColor !== 'no' && favColor !== 'n') {
+  favColor = prompt('My favorite color is Green ? Y(yes)/N(no)').toLowerCase();
+}
+if (favColor === 'yes' || favColor === 'y') {
+  console.log('Wrong my favorite color is Blue ');
+} else if (favColor === 'no' || favColor === 'n') {
+  console.log( 'Correct Green not my favorite color Blue is ');
+}

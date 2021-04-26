@@ -7,6 +7,7 @@ while (anime !== 'yes' && anime !== 'y' && anime !== 'no' && anime !== 'n') {
 }
 if (anime === 'yes' || anime === 'y') {
   console.log('I love Anime \'YES\' is a correct answer ');
+  document.write('<p>1. I love Anime \'YES\' is a correct answer </p>');
 } else if (anime === 'no' || anime === 'n') {
   console.log('I love Anime \'NO\' is a wrong answer');
 }
@@ -54,3 +55,5 @@ if (favColor === 'yes' || favColor === 'y') {
 } else if (favColor === 'no' || favColor === 'n') {
   console.log( 'Correct Green not my favorite color Blue is ');
 }
+
+alert('Welcome '+userName+' it was nice play with you, take care see you soon.');

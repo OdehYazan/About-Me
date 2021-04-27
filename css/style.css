@@ -22,17 +22,44 @@ p{
   color:rgb(255, 252, 252);
 }
 body, html {
-  height: 100%;
-}
-#bg
-{
-  background-image: url("https://swall.teahub.io/photos/small/301-3012564_blur-image-galleries-blur-backgrounds-for-websites.jpg");
-
  
-  height: 100%;
+}
+#bg 
+ {
+  background-image:url("../../img/luffy.jpg");
+ 
+ 
+  
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
   
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+} 
+#list{
+  display:inline-block;
+  /* border: 1px solid black; */
+  margin-top: 100%;
+  margin-bottom:2% ;  
+  margin-left:20%; 
+  
+  
+
 }
+ol li {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  
+}
+span{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+/* html{
+  background-image: url('../../img/luffy.jpg');
+  height: 100%;
+   background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */

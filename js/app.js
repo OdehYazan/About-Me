@@ -1,21 +1,28 @@
-'use stict';
-let userName = prompt('Tell me your name please ?').toUpperCase();
-let anime = prompt('Do you think I love Anime ? Y/N or Yes/No').toLowerCase();
+'use strict';
 let score = 0;
-while (anime !== 'yes' && anime !== 'y' && anime !== 'no' && anime !== 'n') {
-  anime = prompt('Do you think I love Anime ? Y/N or Yes/No').toLowerCase();
-}
-if (anime === 'yes' || anime === 'y') {
-  console.log('I love Anime ? \'YES\' is a correct answer ');
-  // document.write('<p>1. I love Anime \'YES\' is a correct answer </p>');
-  alert(' I love Anime ? \'YES\' is a correct answer ');
-  score++;
+let userName = prompt('Tell me your name please ?').toUpperCase();
+function q1 ()
+{
+  let anime = prompt('Do you think I love Anime ? Y/N or Yes/No').toLowerCase();
 
-} else if (anime === 'no' || anime === 'n') {
-  console.log('I love Anime \'NO\' is a wrong answer');
-  // document.write('<p>1. I love Anime ?  \'NO\' is a wrong answer </p>');
-  alert(' I love Anime ? \'NO\' is a wrong answer ');
+  while (anime !== 'yes' && anime !== 'y' && anime !== 'no' && anime !== 'n') {
+    anime = prompt('Do you think I love Anime ? Y/N or Yes/No').toLowerCase();
+  }
+  if (anime === 'yes' || anime === 'y') {
+    console.log('I love Anime ? \'YES\' is a correct answer ');
+    // document.write('<p>1. I love Anime \'YES\' is a correct answer </p>');
+    alert(' I love Anime ? \'YES\' is a correct answer ');
+    score++;
+  
+  } else if (anime === 'no' || anime === 'n') {
+    console.log('I love Anime \'NO\' is a wrong answer');
+    // document.write('<p>1. I love Anime ?  \'NO\' is a wrong answer </p>');
+    alert(' I love Anime ? \'NO\' is a wrong answer ');
+  }
 }
+q1 ();
+
+
 
 let videoGames = prompt('I love video games ? Y/N or Yes/No').toLowerCase();
 

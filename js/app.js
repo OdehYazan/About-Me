@@ -105,25 +105,29 @@ function q4 ()
  }
 q5 ();
 
-
-let age = parseInt(prompt('Can you guess my age ? you have 4 attempts'));
-for (let i = 1; i <= 4; i++) {
-  if (age === 31) {
-    alert('Yes my age is 31 good guessing 👏');
-    score++;
-    break;
+function q6 ()
+{
+  let age = parseInt(prompt('Can you guess my age ? you have 4 attempts'));
+  for (let i = 1; i <= 4; i++) {
+    if (age === 31) {
+      alert('Yes my age is 31 good guessing 👏');
+      score++;
+      break;
+    }
+    else if (age >= 40) {
+      alert('I am much younger');
+      age = parseInt(prompt(' Guess my age ?'));
+    } else if ((age <= 39 && age >= 30) || (age < 30 && age >= 27)) {
+      alert('You are close');
+      age = parseInt(prompt(' Guess again🤔'));
+    } else if (age < 27) {
+      alert('I am much older ');
+      age = parseInt(prompt(' Guess again 🤔'));
+    }
   }
-  else if (age >= 40) {
-    alert('I am much younger');
-    age = parseInt(prompt(' Guess my age ?'));
-  } else if ((age <= 39 && age >= 30) || (age < 30 && age >= 27)) {
-    alert('You are close');
-    age = parseInt(prompt(' Guess again🤔'));
-  } else if (age < 27) {
-    alert('I am much older ');
-    age = parseInt(prompt(' Guess again 🤔'));
-  }
+  
 }
+q6 ();
 
 let favAnimes = ['one piece', 'death note', 'attack on titan', 'hunter x hunter'];
 let uAnswer = prompt('Can you guess one of my favorite animes ? *Yoy have 6 attempts*').toLowerCase();

@@ -42,22 +42,25 @@ function q2 ()
 }
 q2 ();
 
+function q3 ()
+{
+  let karshat = prompt('I hate Karshat food ? Y/N or Yes/No').toLowerCase();
 
-let karshat = prompt('I hate Karshat food ? Y/N or Yes/No').toLowerCase();
-
-while (karshat !== 'yes' && karshat !== 'y' && karshat !== 'no' && karshat !== 'n') {
-  karshat = prompt('I hate Karshat food ? Y/N or Yes/No').toLowerCase();
+  while (karshat !== 'yes' && karshat !== 'y' && karshat !== 'no' && karshat !== 'n') {
+    karshat = prompt('I hate Karshat food ? Y/N or Yes/No').toLowerCase();
+  }
+  if (karshat === 'yes' || karshat === 'y') {
+    console.log('I hate Karshat food ?  \'yes\' is a wrong answer ');
+    // document.write('<p>3. I hate Karshat food ?  \'yes\' is a wrong answer</p>'),
+    alert('I hate Karshat food ?  \'yes\' is a wrong answer');
+  } else if (karshat === 'no' || karshat === 'n') {
+    // document.write('<p>3. I hate Karshat food ?  \'No\' is a correct answer</p>'),
+    alert('I hate Karshat food ?  \'NO\' is a correct answe');
+    console.log('I hate Karshat food \'No\' is  a correct answer');
+    score++;
+  }
 }
-if (karshat === 'yes' || karshat === 'y') {
-  console.log('I hate Karshat food ?  \'yes\' is a wrong answer ');
-  // document.write('<p>3. I hate Karshat food ?  \'yes\' is a wrong answer</p>'),
-  alert('I hate Karshat food ?  \'yes\' is a wrong answer');
-} else if (karshat === 'no' || karshat === 'n') {
-  // document.write('<p>3. I hate Karshat food ?  \'No\' is a correct answer</p>'),
-  alert('I hate Karshat food ?  \'NO\' is a correct answe');
-  console.log('I hate Karshat food \'No\' is  a correct answer');
-  score++;
-}
+q3 ();
 
 let drivelicence = prompt('Whta do think I have driving licence  ? Y/N or Yes/No').toLowerCase();
 

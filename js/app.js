@@ -62,22 +62,28 @@ function q3 ()
 }
 q3 ();
 
-let drivelicence = prompt('Whta do think I have driving licence  ? Y/N or Yes/No').toLowerCase();
+function q4 ()
+{
 
-while (drivelicence !== 'yes' && drivelicence !== 'y' && drivelicence !== 'no' && drivelicence !== 'n') {
-  drivelicence = prompt('Whta do think I have driving licence or not  ? Y/N or Yes/No').toLowerCase();
-}
-if (drivelicence === 'yes' || drivelicence === 'y') {
-  console.log('Correct I have driving licence ');
-  // document.write('<p>4. Correct I have driving licence</p>');
-  alert('Correct I have driving licence');
-  score++;
-} else if (drivelicence === 'no' || drivelicence === 'n') {
-  console.log('Wrong  I have driving licence since 2010');
-  // document.write('<p>4. Wrong  I have driving licence since 2010</p>');
-  alert('Wrong  I have driving licence since 2010');
-}
+  let drivelicence = prompt('Whta do think I have driving licence  ? Y/N or Yes/No').toLowerCase();
 
+  while (drivelicence !== 'yes' && drivelicence !== 'y' && drivelicence !== 'no' && drivelicence !== 'n') {
+    drivelicence = prompt('Whta do think I have driving licence or not  ? Y/N or Yes/No').toLowerCase();
+  }
+  if (drivelicence === 'yes' || drivelicence === 'y') {
+    console.log('Correct I have driving licence ');
+    // document.write('<p>4. Correct I have driving licence</p>');
+    alert('Correct I have driving licence');
+    score++;
+  } else if (drivelicence === 'no' || drivelicence === 'n') {
+    console.log('Wrong  I have driving licence since 2010');
+    // document.write('<p>4. Wrong  I have driving licence since 2010</p>');
+    alert('Wrong  I have driving licence since 2010');
+  }
+  
+}
+ q4 ();
+ 
 let favColor = prompt('My favorite color is Green ? Y(yes)/N(no) ');
 
 while (favColor !== 'yes' && favColor !== 'y' && favColor !== 'no' && favColor !== 'n') {

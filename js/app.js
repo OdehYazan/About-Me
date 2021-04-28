@@ -101,7 +101,7 @@ for (let i = 1; i <= 4; i++) {
   }
 }
 
-let favAnimes = ['one piece ', 'death note', 'attack on titan', 'hunter x hunter'];
+let favAnimes = ['one piece', 'death note', 'attack on titan', 'hunter x hunter'];
 let uAnswer = prompt('Can you guess one of my favorite animes ? *Yoy have 6 attempts*').toLowerCase();
 let flag = true;
 for (let j = 1; j <= 5; j++) {
@@ -118,5 +118,5 @@ for (let j = 1; j <= 5; j++) {
     uAnswer = prompt('Can you guess one of my favorite anises again ?').toLowerCase();
   }
 }
-
+alert('May fav animes '+favAnimes);
 alert('Welcome ' + userName + ' it was nice play with you, your score is '+ score +' of 7 ,take care see you soon.');

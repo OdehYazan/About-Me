@@ -106,7 +106,7 @@ let uAnswer = prompt('Can you guess one of my favorite animes ? *Yoy have 6 atte
 let flag = true;
 for (let j = 1; j <= 5; j++) {
 
-  for (let a = 0; a <= 3; a++) {
+  for (let a = 0; a <favAnimes.length; a++) {
     if (uAnswer === favAnimes[a]) {
       alert('You git it right 😀');
       flag = false;

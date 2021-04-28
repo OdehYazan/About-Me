@@ -83,22 +83,27 @@ function q4 ()
   
 }
  q4 ();
- 
-let favColor = prompt('My favorite color is Green ? Y(yes)/N(no) ');
 
-while (favColor !== 'yes' && favColor !== 'y' && favColor !== 'no' && favColor !== 'n') {
-  favColor = prompt('My favorite color is Green ? Y(yes)/N(no)').toLowerCase();
-}
-if (favColor === 'yes' || favColor === 'y') {
-  console.log('Wrong my favorite color is Blue ');
-  // document.write('<p>5. Wrong my favorite color is Blue</p>');
-  alert('Wrong my favorite color is Blue');
-} else if (favColor === 'no' || favColor === 'n') {
-  console.log('Correct Green not my favorite color Blue is ');
-  // document.write('<p>5. Correct Green not my favorite color Blue is</p>');
-  alert('Correct Green not my favorite color Blue is');
-  score++;
-}
+ function q5 ()
+ {
+  let favColor = prompt('My favorite color is Green ? Y(yes)/N(no) ');
+
+  while (favColor !== 'yes' && favColor !== 'y' && favColor !== 'no' && favColor !== 'n') {
+    favColor = prompt('My favorite color is Green ? Y(yes)/N(no)').toLowerCase();
+  }
+  if (favColor === 'yes' || favColor === 'y') {
+    console.log('Wrong my favorite color is Blue ');
+    // document.write('<p>5. Wrong my favorite color is Blue</p>');
+    alert('Wrong my favorite color is Blue');
+  } else if (favColor === 'no' || favColor === 'n') {
+    console.log('Correct Green not my favorite color Blue is ');
+    // document.write('<p>5. Correct Green not my favorite color Blue is</p>');
+    alert('Correct Green not my favorite color Blue is');
+    score++;
+  }
+  
+ }
+q5 ();
 
 
 let age = parseInt(prompt('Can you guess my age ? you have 4 attempts'));

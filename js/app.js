@@ -128,23 +128,27 @@ function q6 ()
   
 }
 q6 ();
-
 let favAnimes = ['one piece', 'death note', 'attack on titan', 'hunter x hunter'];
-let uAnswer = prompt('Can you guess one of my favorite animes ? *Yoy have 6 attempts*').toLowerCase();
-let flag = true;
-for (let j = 1; j <= 5; j++) {
-
-  for (let a = 0; a <favAnimes.length; a++) {
-    if (uAnswer === favAnimes[a]) {
-      alert('You git it right 😀');
-      flag = false;
-      score++;
-      break;
+ function q7 ()
+ {
+  let uAnswer = prompt('Can you guess one of my favorite animes ? *Yoy have 6 attempts*').toLowerCase();
+  let flag = true;
+  for (let j = 1; j <= 5; j++) {
+  
+    for (let a = 0; a <favAnimes.length; a++) {
+      if (uAnswer === favAnimes[a]) {
+        alert('You git it right 😀');
+        flag = false;
+        score++;
+        break;
+      }
+    }
+    if (flag === true) {
+      uAnswer = prompt('Can you guess one of my favorite anises again ?').toLowerCase();
     }
   }
-  if (flag === true) {
-    uAnswer = prompt('Can you guess one of my favorite anises again ?').toLowerCase();
-  }
-}
+ }
+q7 ();
+
 alert('May fav animes '+favAnimes);
 alert('Welcome ' + userName + ' it was nice play with you, your score is '+ score +' of 7 ,take care see you soon.');

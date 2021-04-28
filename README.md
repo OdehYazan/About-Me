@@ -3,8 +3,10 @@
 <img src="img/myImage.jpg" height="auto" width="200" style="border-radius:50%"></img>
 
 ## *Name: Yazan Odeh 👨
+## *Name: Maram Abu Murad (I Was The Driver I Created the Functions)
 
 ## * Major: Computer Engineering 💻  
+## * Major : Business Administration
 
 ## * I am taking web developer courses with ASAC to be excellent programmer inshallah 😎
 

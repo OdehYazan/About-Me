@@ -22,23 +22,26 @@ function q1 ()
 }
 q1 ();
 
+function q2 ()
+{
+  let videoGames = prompt('I love video games ? Y/N or Yes/No').toLowerCase();
 
-
-let videoGames = prompt('I love video games ? Y/N or Yes/No').toLowerCase();
-
-while (videoGames !== 'yes' && videoGames !== 'y' && videoGames !== 'no' && videoGames !== 'n') {
-  videoGames = prompt('I love video games ? Y/N or Yes/No').toLowerCase();
+  while (videoGames !== 'yes' && videoGames !== 'y' && videoGames !== 'no' && videoGames !== 'n') {
+    videoGames = prompt('I love video games ? Y/N or Yes/No').toLowerCase();
+  }
+  if (videoGames === 'yes' || videoGames === 'y') {
+    console.log('I love video games \'Yes\' is a correct answer ');
+    // document.write('<p>2.I love video games ? \'Yes\' is a correct answer </p>');
+    alert('I love video games ? \'Yes\' is a correct answer');
+    score++;
+  } else if (videoGames === 'no' || videoGames === 'n') {
+    // document.write('<p>2.I love video games ? \'NO\' is a correct answer </p>');
+    alert('I love video games ? \'NO\' is a correct answer');
+    console.log('I love video games ? \'No\' is wrong answer');
+  }
 }
-if (videoGames === 'yes' || videoGames === 'y') {
-  console.log('I love video games \'Yes\' is a correct answer ');
-  // document.write('<p>2.I love video games ? \'Yes\' is a correct answer </p>');
-  alert('I love video games ? \'Yes\' is a correct answer');
-  score++;
-} else if (videoGames === 'no' || videoGames === 'n') {
-  // document.write('<p>2.I love video games ? \'NO\' is a correct answer </p>');
-  alert('I love video games ? \'NO\' is a correct answer');
-  console.log('I love video games ? \'No\' is wrong answer');
-}
+q2 ();
+
 
 let karshat = prompt('I hate Karshat food ? Y/N or Yes/No').toLowerCase();
 

@@ -1,8 +1,7 @@
 'use strict';
 let score = 0;
 let userName = prompt('Tell me your name please ?').toUpperCase();
-function q1 ()
-{
+function q1() {
   let anime = prompt('Do you think I love Anime ? Y/N or Yes/No').toLowerCase();
 
   while (anime !== 'yes' && anime !== 'y' && anime !== 'no' && anime !== 'n') {
@@ -13,17 +12,16 @@ function q1 ()
     // document.write('<p>1. I love Anime \'YES\' is a correct answer </p>');
     alert(' I love Anime ? \'YES\' is a correct answer ');
     score++;
-  
+
   } else if (anime === 'no' || anime === 'n') {
     console.log('I love Anime \'NO\' is a wrong answer');
     // document.write('<p>1. I love Anime ?  \'NO\' is a wrong answer </p>');
     alert(' I love Anime ? \'NO\' is a wrong answer ');
   }
 }
-q1 ();
+q1();
 
-function q2 ()
-{
+function q2() {
   let videoGames = prompt('I love video games ? Y/N or Yes/No').toLowerCase();
 
   while (videoGames !== 'yes' && videoGames !== 'y' && videoGames !== 'no' && videoGames !== 'n') {
@@ -40,10 +38,9 @@ function q2 ()
     console.log('I love video games ? \'No\' is wrong answer');
   }
 }
-q2 ();
+q2();
 
-function q3 ()
-{
+function q3() {
   let karshat = prompt('I hate Karshat food ? Y/N or Yes/No').toLowerCase();
 
   while (karshat !== 'yes' && karshat !== 'y' && karshat !== 'no' && karshat !== 'n') {
@@ -60,10 +57,9 @@ function q3 ()
     score++;
   }
 }
-q3 ();
+q3();
 
-function q4 ()
-{
+function q4() {
 
   let drivelicence = prompt('Whta do think I have driving licence  ? Y/N or Yes/No').toLowerCase();
 
@@ -80,12 +76,10 @@ function q4 ()
     // document.write('<p>4. Wrong  I have driving licence since 2010</p>');
     alert('Wrong  I have driving licence since 2010');
   }
-  
 }
- q4 ();
+q4();
 
- function q5 ()
- {
+function q5() {
   let favColor = prompt('My favorite color is Green ? Y(yes)/N(no) ');
 
   while (favColor !== 'yes' && favColor !== 'y' && favColor !== 'no' && favColor !== 'n') {
@@ -101,12 +95,11 @@ function q4 ()
     alert('Correct Green not my favorite color Blue is');
     score++;
   }
-  
- }
-q5 ();
 
-function q6 ()
-{
+}
+q5();
+
+function q6() {
   let age = parseInt(prompt('Can you guess my age ? you have 4 attempts'));
   for (let i = 1; i <= 4; i++) {
     if (age === 31) {
@@ -125,30 +118,34 @@ function q6 ()
       age = parseInt(prompt(' Guess again 🤔'));
     }
   }
-  
+
 }
-q6 ();
+q6();
 let favAnimes = ['one piece', 'death note', 'attack on titan', 'hunter x hunter'];
- function q7 ()
- {
+function q7() {
   let uAnswer = prompt('Can you guess one of my favorite animes ? *Yoy have 6 attempts*').toLowerCase();
   let flag = true;
   for (let j = 1; j <= 5; j++) {
-  
-    for (let a = 0; a <favAnimes.length; a++) {
+
+    for (let a = 0; a < favAnimes.length; a++) {
       if (uAnswer === favAnimes[a]) {
         alert('You git it right 😀');
         flag = false;
         score++;
         break;
       }
+
+    }
+    if (flag === false) {
+      break;
     }
     if (flag === true) {
       uAnswer = prompt('Can you guess one of my favorite anises again ?').toLowerCase();
     }
   }
- }
-q7 ();
+  return favAnimes;
+}
+q7();
 
-alert('May fav animes '+favAnimes);
-alert('Welcome ' + userName + ' it was nice play with you, your score is '+ score +' of 7 ,take care see you soon.');
+alert('May fav animes ' + favAnimes);
+alert('Welcome ' + userName + ' it was nice play with you, your score is ' + score + ' of 7 ,take care see you soon.');

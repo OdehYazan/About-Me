@@ -143,7 +143,6 @@ function q7() {
       uAnswer = prompt('Can you guess one of my favorite anises again ?').toLowerCase();
     }
   }
-  return favAnimes;
 }
 q7();
 

@@ -8,14 +8,12 @@ function q1() {
     anime = prompt('Do you think I love Anime ? Y/N or Yes/No').toLowerCase();
   }
   if (anime === 'yes' || anime === 'y') {
-    console.log('I love Anime ? \'YES\' is a correct answer ');
-    // document.write('<p>1. I love Anime \'YES\' is a correct answer </p>');
+    document.write('<p>1. I love Anime \'YES\' is a correct answer </p>');
     alert(' I love Anime ? \'YES\' is a correct answer ');
     score++;
 
   } else if (anime === 'no' || anime === 'n') {
-    console.log('I love Anime \'NO\' is a wrong answer');
-    // document.write('<p>1. I love Anime ?  \'NO\' is a wrong answer </p>');
+    document.write('<p>1. I love Anime ?  \'NO\' is a wrong answer </p>');
     alert(' I love Anime ? \'NO\' is a wrong answer ');
   }
 }
@@ -28,14 +26,12 @@ function q2() {
     videoGames = prompt('I love video games ? Y/N or Yes/No').toLowerCase();
   }
   if (videoGames === 'yes' || videoGames === 'y') {
-    console.log('I love video games \'Yes\' is a correct answer ');
-    // document.write('<p>2.I love video games ? \'Yes\' is a correct answer </p>');
+    document.write('<p>2.I love video games ? \'Yes\' is a correct answer </p>');
     alert('I love video games ? \'Yes\' is a correct answer');
     score++;
   } else if (videoGames === 'no' || videoGames === 'n') {
-    // document.write('<p>2.I love video games ? \'NO\' is a correct answer </p>');
+    document.write('<p>2.I love video games ? \'NO\' is a correct answer </p>');
     alert('I love video games ? \'NO\' is a correct answer');
-    console.log('I love video games ? \'No\' is wrong answer');
   }
 }
 q2();
@@ -47,13 +43,11 @@ function q3() {
     karshat = prompt('I hate Karshat food ? Y/N or Yes/No').toLowerCase();
   }
   if (karshat === 'yes' || karshat === 'y') {
-    console.log('I hate Karshat food ?  \'yes\' is a wrong answer ');
-    // document.write('<p>3. I hate Karshat food ?  \'yes\' is a wrong answer</p>'),
+    document.write('<p>3. I hate Karshat food ?  \'yes\' is a wrong answer</p>'),
     alert('I hate Karshat food ?  \'yes\' is a wrong answer');
   } else if (karshat === 'no' || karshat === 'n') {
-    // document.write('<p>3. I hate Karshat food ?  \'No\' is a correct answer</p>'),
+    document.write('<p>3. I hate Karshat food ?  \'No\' is a correct answer</p>'),
     alert('I hate Karshat food ?  \'NO\' is a correct answe');
-    console.log('I hate Karshat food \'No\' is  a correct answer');
     score++;
   }
 }
@@ -67,13 +61,11 @@ function q4() {
     drivelicence = prompt('Whta do think I have driving licence or not  ? Y/N or Yes/No').toLowerCase();
   }
   if (drivelicence === 'yes' || drivelicence === 'y') {
-    console.log('Correct I have driving licence ');
-    // document.write('<p>4. Correct I have driving licence</p>');
+    document.write('<p>4. Correct I have driving licence</p>');
     alert('Correct I have driving licence');
     score++;
   } else if (drivelicence === 'no' || drivelicence === 'n') {
-    console.log('Wrong  I have driving licence since 2010');
-    // document.write('<p>4. Wrong  I have driving licence since 2010</p>');
+    document.write('<p>4. Wrong  I have driving licence since 2010</p>');
     alert('Wrong  I have driving licence since 2010');
   }
 }
@@ -86,12 +78,10 @@ function q5() {
     favColor = prompt('My favorite color is Green ? Y(yes)/N(no)').toLowerCase();
   }
   if (favColor === 'yes' || favColor === 'y') {
-    console.log('Wrong my favorite color is Blue ');
-    // document.write('<p>5. Wrong my favorite color is Blue</p>');
+    document.write('<p>5. Wrong my favorite color is Blue</p>');
     alert('Wrong my favorite color is Blue');
   } else if (favColor === 'no' || favColor === 'n') {
-    console.log('Correct Green not my favorite color Blue is ');
-    // document.write('<p>5. Correct Green not my favorite color Blue is</p>');
+    document.write('<p>5. Correct Green not my favorite color Blue is</p>');
     alert('Correct Green not my favorite color Blue is');
     score++;
   }
